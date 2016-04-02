@@ -1,0 +1,11 @@
+COMP SCI 2XB3
+Natasha DeCoste
+1206976
+On 01/04/2016 I confirm this is my individual work being submitted.
+You can use the Class Assignment2.java in order to run the BFS, DFS and Shortest Path and get the outputs. All other classes are individual ADTs. Also note, all
+paths are that of Boston -> Miami (in order to show the differences in the Paths in the output file).
+Changes:
+Changes some of the cities in the dataset if they were inconsistent. Also had to change the latitudes for the restaurants since they were all negative and didnt 
+correspond to the positive latitudes in the zips of the city. (Changed it within the program using Math.abs(), not in the dataset). Also I used online help to 
+code the Haversine formula for calculating distance using the Longitude and Latitude. I did not copy anything completely just used reference, however it isn't 
+that commented since I have limited knowledge about why we apply certain math functions to get to the answer.

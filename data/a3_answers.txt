@@ -1,0 +1,34 @@
+3.1
+For this problem I used a directional weighted graph. The nodes a Vertex object which encapsulates information for the Cities. The weighted edges represent 
+the cost from going from a city to another (the gas price of the start state multiplied by the distance and the fuel efficiency). For this assignment I used a very
+Object Oriented Approach which means I had to change a lot of the algorithm implementations from in the textbook (they accessed information about the nodes
+using array indexes). Most of the information that the algorithms used I encapsulated within the vertex class, such as the use of edgeTo and the Adjacencies of the 
+Vertices. The restaurant's are also objects containing a binary tree sort of the locations using the latitude and then after using the longitude. I  also split up 
+the food items to be in Menu objects corresponding to each of the restaurants. It was more complicated than necessary but I had initially thought that distance to the
+restaurants were a factor in the price and we would have to see which restaurant was closest that also would have the cheapest meal. With some slight modifications to
+the textbook algorithms, I was able to use my data structures to run the breadth first paths (using the breath first search approach) and the depth first paths (using
+the depth first search algorithms) to find the paths.
+
+To get the output I run the Assignment3 java file. It instantiates graphs and uses DFS, BFS and Dijkstra's algorithms on it. Each algorithm creates a pathTo of Vertices.
+Calling the write() function is what writes it to the output. Assignment3.java also is responsible for reading the from a3_in.txt to get the source
+and destination cities (I used Boston -> Miami).
+
+3.2
+The BFS and DFS did not return the same path. (The DFS was much longer than the BFS). Since there were not too many vertices in this graph they were both
+effective and took around the same amount of time. I believe the DFS would have many more steps since it exhausts every possibility when path seeking. 
+In this situation they were both useful and practical for finding a path. However since DFS is recursive, if the graph is very deep with many connections to search, the DFS would be a
+worse choice than the BFS. Therefore if the connected cities increase, BFS would have to be used (in some cases DFS will be extremely slow and might not finish).
+
+
+3.4
+To compute the Shortest Path I implemented Dijkstra's Algorithm. As stated in 3.1 I had to change a lot in order to make it use Vertex objects as the vertices (whereas the 
+Algorithms textbook used Vertices that had a number key and held information in arrays using the indices as Vertex references). For all path algorithms I had used 
+Bag<DirectedEdge> for adjacent but they were held within the Vertices. Also the EdgeTo reference is also held within the Vertex. Since Dijkstra's algorithm uses time proportional to 
+ElogV in the worst case, we can assume that worse case it will have complexity of 104 log 32 to solve for shortest path. As the cities increase, the complexity will also if they are connected
+to other cities. The way I did my graph, I only created vertices on the graph for cities that are connected to at least one other city. There was no point creating a city for the ~29,000 locations 
+in the dataset. Getting the restaurant at every stop used a binary search through the longitudes and then a check for the latitudes (being within range). Binary searches 
+take at most logN complexity to get to searched item, however we have to do it for every restaurant brand (once for wendy's, once for mcdonald's, etc etc).
+With more restaurants the complexity of that step would definitely increase because you have to sort through the more restaurant locations as well as checking which one has the cheapest item.
+
+
+

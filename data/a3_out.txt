@@ -1,0 +1,27 @@
+BFS: Boston, New York City, Pittsburgh, Columbus, Nashville, Atlanta, Jacksonville, Miami, 
+DFS: Boston, New York City, Pittsburgh, Columbus, Chicago, St. Louis, Memphis, Oklahoma City, Albuquerque, Dallas, San Antonio, Houston, New Orleans, Jacksonville, Miami, 
+******************************
+Shortest Path (Cheapest Route)
+
+City                 Meal Choice                              Cost of Meal    Cost of Fuel    Total City Cost
+
+Boston               No Meal                                  $0.00           $0.00           $0.00          
+
+New York City        $Double Cheeseburger - Meal              $4.38           $15.43          19.81          
+
+Philadelphia         $Quarter Pounder with Cheese - Meal      $5.49           $7.30           12.79          
+
+Baltimore            $Filet-O-Fish - Meal                     $5.49           $8.84           14.33          
+
+Washington           $Double Cheeseburgers - Meal             $5.49           $1.76           7.25           
+
+Charlotte            $Southern Style Chicken - Meal           $5.59           $18.21          23.80          
+
+Atlanta              $Deluxe Quarter Pounder - Meal           $5.79           $25.92          31.71          
+
+Jacksonville         $Premium McWrap Sweet Chili Chicken (Grilled or Crispy) - Meal $5.89           $18.17          24.06          
+
+Miami                $10 Pc. Chicken Nuggets - Combo          $5.99           $7.29           13.28          
+
+                                                                                            Total Cost: $147.03
+************************************************
